@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "b2broker"
+version = "0.1.0"
+description = "test4test"
+authors = ["ioaiy <dsyugay@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^5.0.2"
+djangorestframework = "^3.14.0"
+djangorestframework-jsonapi = "^6.1.0"
+mysqlclient = "^2.2.4"
+python-dotenv = "^1.0.1"
+django-filter = "^23.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+isort = "^5.13.2"
+wemake-python-styleguide = "^0.18.0"
+coverage = "^7.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py311']
+line-length = 120
+
+[tool.isort]
+py_version = 311
+profile = "black"
+src_paths = ["app", "tests"]
+line_length = 120
