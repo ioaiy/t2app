@@ -32,4 +32,4 @@ This project a REST API server supporting pagination, sorting, and filtering for
 - `docker-compose exec web coverage run --source='.' manage.py test t2test.apps.ledgers`
 
 ## API Documentation
-API documentation and usage details are available at `http://localhost:8010/api/v1/`.
+API documentation and usage details are available at `http://localhost:8010/docs/`.

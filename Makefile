@@ -6,6 +6,12 @@ help::
 	@echo "Available commands:"
 	@grep --color=never --extended-regexp --only '^\w[^: ]+:' Makefile | sed -E -e 's/^([^: ]+):/ - \1/'
 
+start:
+	docker-compose up -d
+
+down:
+	docker-compose down
+
 fmt:: isort black
 
 isort::

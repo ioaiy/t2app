@@ -13,6 +13,7 @@ djangorestframework-jsonapi = "^6.1.0"
 mysqlclient = "^2.2.4"
 python-dotenv = "^1.0.1"
 django-filter = "^23.5"
+drf-yasg = "^1.21.7"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.1.1"
